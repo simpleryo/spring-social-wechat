@@ -3,7 +3,6 @@ package org.springframework.social.wechat.connect;
 import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.support.OAuth2ConnectionFactory;
 import org.springframework.social.oauth2.AccessGrant;
-
 import org.springframework.social.wechat.UrlConstants;
 import org.springframework.social.wechat.api.WechatMp;
 
@@ -15,7 +14,7 @@ import org.springframework.social.wechat.api.WechatMp;
 public class WechatMpConnectionFactory extends OAuth2ConnectionFactory<WechatMp> {
 
 	public WechatMpConnectionFactory(String appId, String appSecret) {
-		this(appId, appSecret, new WechatAdapter<WechatMp>());
+		this(appId, appSecret, null);
 	}
 
 	public WechatMpConnectionFactory(String appId, String appSecret, ApiAdapter<WechatMp> apiAdapter) {
